@@ -45,4 +45,14 @@ public class Student {
                 ", marks=" + Arrays.toString(marks) +
                 '}';
     }
+
+    public int getMaxMark() {
+        int max = this.marks[0];
+        for (int i = 1; i < this.marks.length; i++) {
+            if (max < this.marks[i]) {
+                max = marks[i];
+            }
+        }
+        return max;
+    }
 }

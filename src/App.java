@@ -10,6 +10,7 @@ public class App {
         s.setMarks(scanner);
         s.printData();
         System.out.println("Average mark is " + s.getAverageMark());
+        System.out.println("The max mark is " + s.getMaxMark());
         System.out.println(s);
     }
 
